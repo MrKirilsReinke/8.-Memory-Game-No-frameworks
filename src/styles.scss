@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --c-main-accent: #547991;
+  --c-secondary-accent: #283841;
+  --c-content-1: #ffffff;
+  --c-content-2: rgba(255, 166, 0, 0.945);
+  --c-content-3: #f1f1c7;
+}
+
+body {
+  max-width: 75rem;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  background-color: var(--c-main-accent)
+}
+
+header {
+  padding-top: 5rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1{
+  position: relative;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 10.125rem;
+  height: 4.25rem;
+  background-color: var(--c-secondary-accent);
+  color: var(--c-content-1);
+  border: 1px solid var(--c-secondary-accent);
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 10rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0.3rem 0.3rem 0.3rem 0rem var(--c-content-3);
+}
+
+.memory-game {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  padding: 5rem 10rem 5rem 10rem;
+  max-width: 75rem;
+}
+
+.card {
+  max-width: 100%;
+  height: 16.6875rem;
+  border: 0.3125rem solid var(--c-secondary-accent);
+  background-color: var(--c-secondary-accent);
+  border-radius: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0.3rem 0.3rem 0.3rem 0rem var(--c-content-3);
+}
+
+.card.flipped {
+  background-color: rgba(255, 166, 0, 0.945);
+  content: attr(data-card);
+  font-size: 5rem;
+}
+
+.flipped:before {
+  content: attr(data-card);
+  color: var(--c-content-1);
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.timer {
+  color: var(--c-content-1);
+  margin-right: 15rem;
+}
+
+.moves{
+  color: var(--c-content-1);
+}
+
