@@ -1,5 +1,5 @@
 # Quickstart
-Open your terminal and write
+Open your terminal and write:
 ```
 npm i
 ```
