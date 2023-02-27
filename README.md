@@ -1,5 +1,5 @@
-# To start coding open your terminal and write
-
+# Quickstart
+Open your terminal and write
 ```
 npm i
 ```
